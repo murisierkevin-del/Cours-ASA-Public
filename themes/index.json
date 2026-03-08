@@ -3,6 +3,11 @@
   "generated_at": "2026-01-28T10:16:00.469599Z",
   "themes": [
     {
+  "id": "cours-pratique",
+  "name": "Cours pratique",
+  "file": "themes/cours_pratique.json"
+   },
+    {
       "id": "theorie-de-circulation",
       "name": "Théorie de circulation",
       "file": "themes/theorie-de-circulation.json"
