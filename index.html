@@ -185,7 +185,7 @@
       <span class="pill muted">Version contenu: <span id="contentVersion">—</span></span>
       <span class="pill muted">Réseau: <span id="offlineLabel">—</span></span>
 
-      <button class="btn" id="resetStatsBtn" title="Réinitialiser la progression (toutes les questions reviennent)">♻️ Réinitialiser stats</button>
+      <button class="btn" id="resetStatsBtn" title="Réinitialiser la progression (toutes les questions reviennent)">♻️ Réinitialiser le thème</button>
     </div>
 
     <main>
@@ -210,10 +210,6 @@
         </div>
       </div>
 
-      <div class="row" id="skipRow">
-        <button class="actionBtn" id="skipBtn" title="Passer à la question suivante (mode linéaire)">⏭ Suivant</button>
-      </div>
-
       <div class="row hidden" id="fauxRow">
         <button class="actionBtn bad" id="fauxBtn" disabled>❌ Faux</button>
       </div>
@@ -229,7 +225,7 @@
   - Quand on arrive au bout, on recommence au début
   - Révision intelligente : après 3x “Juste”, la question disparaît
   - Stat progression en % (maîtrisées / total)
-  - “Réinitialiser stats” : remet TOUTES les questions (reset des compteurs)
+  - “Réinitialiser le thème” : remet TOUTES les questions du thème
 */
 
 const $ = (id)=>document.getElementById(id);
@@ -248,8 +244,6 @@ const justeBtn = $("justeBtn");
 const fauxBtn = $("fauxBtn");
 const fauxRow = $("fauxRow");
 
-const skipBtn = $("skipBtn");
-const skipRow = $("skipRow");
 const finishBtn = $("finishBtn");
 
 const statsLine = $("statsLine");
@@ -365,7 +359,6 @@ function render(){
     showAnswerBtn.classList.add("hidden");
     justeBtn.classList.add("hidden");
     fauxRow.classList.add("hidden");
-    skipRow.classList.add("hidden");
 
     // stats final
     const total = fullCards.length;
@@ -377,7 +370,6 @@ function render(){
     finishBtn.classList.add("hidden");
     showAnswerBtn.classList.remove("hidden");
     justeBtn.classList.remove("hidden");
-    skipRow.classList.remove("hidden");
   }
 
   if(!fullCards.length){
@@ -387,7 +379,6 @@ function render(){
     aImg.classList.add("hidden"); aImg.removeAttribute("src");
 
     fauxRow.classList.add("hidden");
-    skipRow.classList.remove("hidden");
 
     showAnswerBtn.classList.remove("swapHide");
     justeBtn.classList.add("swapHide");
@@ -432,7 +423,6 @@ function render(){
   showAnswerBtn.classList.toggle("swapHide", state.showAnswer);
   justeBtn.classList.toggle("swapHide", !state.showAnswer);
 
-  skipRow.classList.toggle("hidden", state.showAnswer);
   fauxRow.classList.toggle("hidden", !state.showAnswer);
 
   lockMarkButtons(!state.showAnswer);
@@ -450,11 +440,6 @@ function nextLinear(){
 showAnswerBtn.addEventListener("click", ()=>{
   state.showAnswer = true;
   render();
-});
-
-skipBtn.addEventListener("click", ()=>{
-  // mode linéaire : question suivante
-  nextLinear();
 });
 
 justeBtn.addEventListener("click", ()=>{
@@ -592,7 +577,6 @@ async function loadIndex(){
     showAnswerBtn.classList.add("hidden");
     justeBtn.classList.add("hidden");
     fauxRow.classList.add("hidden");
-    skipRow.classList.add("hidden");
     finishBtn.classList.add("hidden");
   }
 }
