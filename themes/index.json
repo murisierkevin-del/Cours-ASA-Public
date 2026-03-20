@@ -18,6 +18,26 @@
       "file": "themes/electrotechnique.json"
     },
     {
+  "id": "cas-mesures-administratives",
+  "name": "Cas de mesures administratives",
+  "file": "themes/cas_mesures_administratives.json"
+},
+{
+  "id": "classification-vehicules",
+  "name": "Classification véhicules",
+  "file": "themes/classification_vehicules.json"
+},
+{
+  "id": "mesures-administratives",
+  "name": "Mesures administratives",
+  "file": "themes/mesures_administratives.json"
+},
+{
+  "id": "oac-conducteurs-vehicules",
+  "name": "OAC Conducteurs véhicules",
+  "file": "themes/oac_conducteurs_vehicules.json"
+},
+    {
   "id": "droit-suisse",
   "name": "Droit et politique Suisse",
   "file": "themes/Droit et politique Suisse.json"
