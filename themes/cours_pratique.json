@@ -25,7 +25,7 @@
     {
       "id": "q005",
       "q": "Comment se réalise une mesure de bruit à proximité (y) ?",
-      "a": "A 50 cm de la sortie d’échappement et à la même hauteur, mais au moins à 20 cm du sol et à un angle de 45°.\n3 mesures (écart max 2 dB/A)\nPrendre la valeur la plus haute\nDir 6 : chiffre 148\nTolérance 5dB/A\n75% du régime de puissance (avant 06.07.2008)\n75% quand le régime est moins de 5000 t/min.\n3750 t/min quand le régime de puissance est compris entre 5000 et 7500 t/min.\n50% quand le régime est plus de 7500 t/min."
+      "a": "A 50 cm de la sortie d’échappement et à la même hauteur, mais au moins à 20 cm du sol et à un angle de 45°.\n3 mesures (écart max 2 dB/A)\nPrendre la valeur la plus haute\nDir 6 : chiffre 148\nTolérance 5dB/A\nrégime stabilisé(COC ou RT) et lachez les gazs\n75% du régime de puissance (avant 06.07.2008)\n75% quand le régime est moins de 5000 t/min.\n3750 t/min quand le régime de puissance est compris entre 5000 et 7500 t/min.\n50% quand le régime est plus de 7500 t/min."
     },
     {
       "id": "q006",
