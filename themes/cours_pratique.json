@@ -54,7 +54,7 @@
     },
     {
       "id": "q034",
-      "q": "Comment contrôle-t-on les émissions d'un catalyseur a trois voies ?",
+      "q": "Comment contrôle-t-on les émissions d'un catalyseur a trois voies?",
       "a": "le HC et le CO au régime accéléré 2500 tr/min"
     },
     {
@@ -171,7 +171,7 @@
       "id": "q033",
       "q": "Comment mesure-t-on la profondeur entre l’arrière du véhicule et dispositif anti-encastrement ?",
       "a": "Depuis le point le plus arrière du véhicule, en tenant compte des éléments comme la plateforme élévatrice. Les éléments dépassant de moins de 50 mm (butées, caoutchouc, charnières, serrures, éclairage) et les éléments situés a plus de 2 mètres du sol ne sont pas pris en considération."
-    }
+    },
     {
       "id": "q035",
       "q": "A partir de quelle norme (champs 27 permis de circulation) le test particules est obligatoire et valeurs?",
